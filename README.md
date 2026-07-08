@@ -32,6 +32,15 @@ Google Play remains the preferred distribution channel when feasible, but today'
 5. Record evidence: build command, test result, artifact path, checksum, and known limitations.
 6. Keep outputs phone/Termux-friendly.
 
+## Portfolio app repos
+
+| App | Repo | Current status |
+|---|---|---|
+| Bighart Beat | [renardoberou/Bighart-Beat](https://github.com/renardoberou/Bighart-Beat) | audit pending |
+| Bighart Synth Standalone | [renardoberou/Bighart-synth-standalone](https://github.com/renardoberou/Bighart-synth-standalone) | audit pending |
+| Ping Thing Android | [renardoberou/Ping-thing-android](https://github.com/renardoberou/Ping-thing-android) | audit pending |
+| Spectral Camera | [renardoberou/spectral-camera](https://github.com/renardoberou/spectral-camera) | audit pending |
+
 ## Immediate coordination workflow
 
 1. Fill `docs/apps/app-inventory.md` with the four apps.
