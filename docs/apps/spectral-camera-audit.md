@@ -11,6 +11,7 @@ Status: local repo found; full audit still pending.
 
 ## Local repo notes
 
+- Preferred path: `/storage/emulated/0/Documents/spectral-camera` because it is a valid clean git worktree; the uppercase duplicate has dubious-ownership friction and no stronger freshness evidence.
 - `/storage/emulated/0/Documents/spectral-camera`: git repo, `main...origin/main`, clean at probe time.
 - `/storage/emulated/0/Documents/Spectral-camera`: duplicate/older path exists but Git reported dubious ownership; avoid unless explicitly resolved.
 

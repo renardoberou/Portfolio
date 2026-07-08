@@ -9,6 +9,7 @@ This repository is public-facing coordination for Bernado's app portfolio.
 - Prefer small commits with evidence-backed docs.
 - Keep Termux/mobile constraints in mind.
 - Play Store is the preferred official release path; GitHub portfolio visibility is today's priority.
+- When duplicate local paths exist, prefer the most recent version after checking directory mtime, git commit date, branch freshness, and working-tree cleanliness. Document the selected path and why.
 
 ## Start here
 

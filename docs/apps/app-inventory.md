@@ -26,10 +26,10 @@ Checked on the phone/Termux host:
 
 | App | Local path status |
 |---|---|
-| Bighart Beat | `/data/data/com.termux/files/home/bighart-beat` exists and is clean; `/storage/emulated/0/Documents/bighart-beat` also exists with untracked `.test.*` files |
+| Bighart Beat | prefer `/data/data/com.termux/files/home/bighart-beat`: same HEAD as Documents clone, newer directory mtime, clean working tree; `/storage/emulated/0/Documents/bighart-beat` has untracked `.test.*` files |
 | Bighart Synth Standalone | no local directory found under home or `/storage/emulated/0/Documents` |
 | Ping Thing Android | `/data/data/com.termux/files/home/ping-thing-android` exists; local clone is behind `origin/main` by 7 and has untracked `headless*.png` files |
-| Spectral Camera | `/storage/emulated/0/Documents/spectral-camera` exists and is clean; uppercase duplicate `/storage/emulated/0/Documents/Spectral-camera` exists but hit Git dubious-ownership warning, so avoid it until resolved |
+| Spectral Camera | prefer `/storage/emulated/0/Documents/spectral-camera`: valid git worktree, clean, same mtime evidence as uppercase duplicate; uppercase `/storage/emulated/0/Documents/Spectral-camera` hit Git dubious-ownership warning, so avoid unless freshness evidence changes |
 
 ## Release-risk scale
 
@@ -52,3 +52,7 @@ For each app, create `docs/apps/APP_SLUG-audit.md` with:
 - Play readiness blockers;
 - GitHub/Gumroad/portfolio readiness blockers;
 - recommended next action.
+
+## Duplicate-resolution policy
+
+When duplicate local paths exist, prefer the most recent valid version. Evidence to check: directory mtime, git HEAD/commit date, remote URL, branch freshness, and working-tree cleanliness. If freshness ties, prefer the clean valid git worktree over a dubious-ownership or dirty duplicate.

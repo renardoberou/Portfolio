@@ -197,6 +197,16 @@ git log --oneline -3
 
 ---
 
+
+## Duplicate local repo policy
+
+When two local directories appear to represent the same app, prefer the most recent version **after verifying evidence**:
+
+1. Compare directory/file mtimes with `stat`.
+2. Compare git HEAD commit, commit date, remote URL, branch freshness, and working-tree cleanliness.
+3. Prefer the newest valid working copy unless it is dirty, stale, or unsafe.
+4. Record the selected path and any ignored duplicate in `docs/apps/app-inventory.md` and the relevant audit file.
+
 ## Parallel-agent task queue
 
 Agents can safely pick these in parallel after Task 1:

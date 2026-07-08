@@ -11,6 +11,7 @@ Status: local repo found; full audit still pending.
 
 ## Local repo notes
 
+- Preferred path: `/data/data/com.termux/files/home/bighart-beat` because it has the same HEAD as the Documents clone, a newer directory mtime, and a clean working tree.
 - `/data/data/com.termux/files/home/bighart-beat`: git repo, `main...origin/main`, clean at probe time.
 - `/storage/emulated/0/Documents/bighart-beat`: git repo, `main...origin/main`, but has untracked `.test.err` and `.test.out`.
 
