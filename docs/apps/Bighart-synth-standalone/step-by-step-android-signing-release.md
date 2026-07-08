@@ -45,7 +45,7 @@ git log -1 --oneline
 Safety check before any release tag:
 
 ```bash
-git grep -n -i -E 'api[_-]?key|secret|token|password|authorization: bearer|ghp_|sk-[A-Za-z0-9]' HEAD || true
+git grep -n -i -E 'api[_-]?key|secret|token|password|authorization|ghp_|sk-' HEAD || true
 git grep -n -E '\.(jks|keystore|apk|aab)$' HEAD || true
 ```
 
