@@ -53,6 +53,19 @@ For each app, create `docs/apps/APP_SLUG-audit.md` with:
 - GitHub/Gumroad/portfolio readiness blockers;
 - recommended next action.
 
+## Android signing/release guides
+
+Generated on 2026-07-08 after re-inspecting the four app repos and confirming all four apps appear installed on the Android home screen:
+
+| App | Guide |
+|---|---|
+| Bighart Beat | [`Bighart-Beat/step-by-step-android-signing-release.md`](Bighart-Beat/step-by-step-android-signing-release.md) |
+| Bighart Synth Standalone | [`Bighart-synth-standalone/step-by-step-android-signing-release.md`](Bighart-synth-standalone/step-by-step-android-signing-release.md) |
+| Ping Thing Android | [`Ping-thing-android/step-by-step-android-signing-release.md`](Ping-thing-android/step-by-step-android-signing-release.md) |
+| Spectral Camera | [`spectral-camera/step-by-step-android-signing-release.md`](spectral-camera/step-by-step-android-signing-release.md) |
+
+Roll-up index: [`android-signing-release-index.md`](android-signing-release-index.md)
+
 ## Duplicate-resolution policy
 
 When duplicate local paths exist, prefer the most recent valid version. Evidence to check: directory mtime, git HEAD/commit date, remote URL, branch freshness, and working-tree cleanliness. If freshness ties, prefer the clean valid git worktree over a dubious-ownership or dirty duplicate.
