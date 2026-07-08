@@ -1,12 +1,18 @@
 # Bighart Beat Audit
 
-Status: not audited yet.
+Status: local repo found; full audit still pending.
 
 ## Source
 
 - Repo: https://github.com/renardoberou/Bighart-Beat
-- Local path: `/storage/emulated/0/Documents/Bighart-Beat`
+- Local path: `/data/data/com.termux/files/home/bighart-beat` preferred; `/storage/emulated/0/Documents/bighart-beat` also exists
 - Inspected commit: `not inspected yet`
+
+
+## Local repo notes
+
+- `/data/data/com.termux/files/home/bighart-beat`: git repo, `main...origin/main`, clean at probe time.
+- `/storage/emulated/0/Documents/bighart-beat`: git repo, `main...origin/main`, but has untracked `.test.err` and `.test.out`.
 
 ## Technical facts
 

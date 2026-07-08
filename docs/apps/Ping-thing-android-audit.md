@@ -1,12 +1,20 @@
 # Ping Thing Android Audit
 
-Status: not audited yet.
+Status: local repo found; full audit still pending.
 
 ## Source
 
 - Repo: https://github.com/renardoberou/Ping-thing-android
-- Local path: `not found locally; clone if needed`
+- Local path: `/data/data/com.termux/files/home/ping-thing-android`
 - Inspected commit: `not inspected yet`
+
+
+## Local repo notes
+
+- `/data/data/com.termux/files/home/ping-thing-android`: git repo.
+- Probe result: `main...origin/main [behind 7]`.
+- Untracked files at probe time: `headless-late.png`, `headless.png`.
+- Pull/update before final release audit, but inspect untracked screenshots before deleting.
 
 ## Technical facts
 

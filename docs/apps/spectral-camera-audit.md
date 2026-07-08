@@ -1,12 +1,18 @@
 # Spectral Camera Audit
 
-Status: not audited yet.
+Status: local repo found; full audit still pending.
 
 ## Source
 
 - Repo: https://github.com/renardoberou/spectral-camera
-- Local path: `/storage/emulated/0/Documents/Spectral-camera`
+- Local path: `/storage/emulated/0/Documents/spectral-camera` preferred
 - Inspected commit: `not inspected yet`
+
+
+## Local repo notes
+
+- `/storage/emulated/0/Documents/spectral-camera`: git repo, `main...origin/main`, clean at probe time.
+- `/storage/emulated/0/Documents/Spectral-camera`: duplicate/older path exists but Git reported dubious ownership; avoid unless explicitly resolved.
 
 ## Technical facts
 
