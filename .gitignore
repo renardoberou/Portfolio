@@ -1,0 +1,30 @@
+# Secrets/private material
+.env
+*.jks
+*.keystore
+keystore.properties
+*.pem
+*.p12
+*.mobileprovision
+
+# Android/release artifacts
+*.apk
+*.aab
+*.idsig
+build/
+.gradle/
+local.properties
+
+# Local/generated
+.DS_Store
+__pycache__/
+*.pyc
+.cache/
+dist/
+*.log
+*.out
+
+# Private screenshots / console exports
+private/
+screenshots-private/
+play-console-private/
